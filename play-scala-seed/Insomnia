@@ -1,0 +1,186 @@
+_type: export
+__export_format: 4
+__export_date: 2020-10-31T20:11:30.833Z
+__export_source: insomnia.desktop.app:v2020.4.2
+resources:
+  - _id: req_dd4861463bd346ec804df37f5b8c0b8b
+    parentId: fld_5f5f20e90ed74aff827ca188686d4159
+    modified: 1604173506200
+    created: 1604173487318
+    url: http://localhost:9000/api/v1/movies
+    name: get movies
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1604173487318
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5f5f20e90ed74aff827ca188686d4159
+    parentId: wrk_afc22085d3864a87b46847fa7607c5c4
+    modified: 1604173471849
+    created: 1604173471849
+    name: Platzi Video API
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1604173471849
+    _type: request_group
+  - _id: wrk_afc22085d3864a87b46847fa7607c5c4
+    parentId: null
+    modified: 1604173458748
+    created: 1604173458748
+    name: Insomnia
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_20554521f4974efa9811c8275a24699e
+    parentId: fld_5f5f20e90ed74aff827ca188686d4159
+    modified: 1604173783256
+    created: 1604173527334
+    url: http://localhost:9000/api/v1/movies/d2a4a062-d256-41bb-b1b2-9d915af6b75e
+    name: get movie
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1604173487268
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1db96e8e011944698097cf465d8efaed
+    parentId: fld_5f5f20e90ed74aff827ca188686d4159
+    modified: 1604173767973
+    created: 1604173558018
+    url: http://localhost:9000/api/v1/movies/
+    name: create movie
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"id":"d2a4a062-d256-41bb-b1b2-9d915af6b75e",
+            "title":"Notti bianche, Le (White Nights)",
+            "year":2019,
+            "cover":"http://dummyimage.com/800x600.png/ff4444/ffffff",
+            "description":"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+            "duration":66,
+            "contentRating":"G",
+            "source":"https://ovh.net/semper/rutrum/nulla/nunc.jsp",
+            "tags":"Action|Adventure, Action|Adventure|Thriller, Horror|Western, Horror|Thriller, Comedy|Romance|Sci-Fi, Adventure|Animation|Children|Comedy|Fantasy, Drama"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ab09d518a3f64770908d9f7e689cfe3d
+    authentication: {}
+    metaSortKey: -1604173487218
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf3410b8bdd04486a5fe665f0ef21ff0
+    parentId: fld_5f5f20e90ed74aff827ca188686d4159
+    modified: 1604173837078
+    created: 1604173809440
+    url: http://localhost:9000/api/v1/movies/d2a4a062-d256-41bb-b1b2-9d915af6b75e
+    name: update movie
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"id":"d2a4a062-d256-41bb-b1b2-9d915af6b75e",
+            "title":"Notti bianche, Le (White Nights)",
+            "year":2018,
+            "cover":"http://dummyimage.com/800x600.png/ff4444/ffffff",
+            "description":"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+            "duration":66,
+            "contentRating":"G",
+            "source":"https://ovh.net/semper/rutrum/nulla/nunc.jsp",
+            "tags":"Action|Adventure, Action|Adventure|Thriller, Horror|Western, Horror|Thriller, Comedy|Romance|Sci-Fi, Adventure|Animation|Children|Comedy|Fantasy, Drama"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ab09d518a3f64770908d9f7e689cfe3d
+    authentication: {}
+    metaSortKey: -1604173487168
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_17aae09842b442e4ab519322ff6c5d2e
+    parentId: fld_5f5f20e90ed74aff827ca188686d4159
+    modified: 1604173865565
+    created: 1604173860819
+    url: http://localhost:9000/api/v1/movies/d2a4a062-d256-41bb-b1b2-9d915af6b75e
+    name: delete movie
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1604173487118
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_ca2c49ec1a0e317e59dfc04ad67bdd20eba61b22
+    parentId: wrk_afc22085d3864a87b46847fa7607c5c4
+    modified: 1604173458782
+    created: 1604173458782
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1604173458782
+    _type: environment
+  - _id: jar_ca2c49ec1a0e317e59dfc04ad67bdd20eba61b22
+    parentId: wrk_afc22085d3864a87b46847fa7607c5c4
+    modified: 1604173458783
+    created: 1604173458783
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_878bfd19b02b4d9a829288f9218c91d7
+    parentId: wrk_afc22085d3864a87b46847fa7607c5c4
+    modified: 1604173458749
+    created: 1604173458749
+    fileName: Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
